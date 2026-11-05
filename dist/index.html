@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c1016">
+  <meta name="description" content="Ваше персональное приглашение в LE THÉÂTRE.">
+  <title>LE THÉÂTRE · Для Karoline</title>
+  <link rel="icon" href="./rose.svg" type="image/svg+xml">
+  <link rel="preload" href="./fonts/cormorant-garamond-italic-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./show.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="theatre" aria-hidden="true">
+    <div class="ambient"></div><div class="spotlight spotlight-left"></div><div class="spotlight spotlight-right"></div>
+    <div class="arch arch-outer"></div><div class="arch arch-inner"></div>
+    <div class="curtain curtain-left"></div><div class="curtain curtain-right"></div><div class="valance"></div>
+    <div class="dust"></div><div class="vignette"></div><div class="stage-flash"></div>
+  </div>
+  <div class="show-cue" aria-hidden="true"><span>✦</span><em>Le rideau se lève</em><i></i></div>
+  <header class="masthead"><span class="brand">LE THÉÂTRE</span><span class="brand-rule"></span><span class="edition">Un soir, pour vous</span></header>
+  <main>
+    <div class="invitation" id="invitation">
+      <div class="card-shadow" aria-hidden="true"></div>
+      <article class="letter" id="letter" inert aria-labelledby="salutation">
+        <div class="letter-border" aria-hidden="true"></div>
+        <div class="letter-ornament" aria-hidden="true">✧</div>
+        <p class="letter-label">ПЕРСОНАЛЬНОЕ ПРИГЛАШЕНИЕ</p>
+        <h1 id="salutation" tabindex="-1">Уважаемая Karoline,</h1>
+        <div class="letter-copy">
+          <p>Дирекция <strong>LE THÉÂTRE</strong> имеет честь пригласить Вас в наш небольшой виртуальный театр, созданный специально для предстоящего вечера</p>
+          <p>За его дверями Вас ожидают уютная атмосфера, приятная компания и представление, репертуар которого будет полностью в Вашем распоряжении</p>
+          <p>Ваше персональное место уже подготовлено, а двери театра открыты исключительно для Вас</p>
+        </div>
+        <p class="anticipation">С нетерпением ожидаю Вашего появления!</p>
+        <a class="enter-link" href="https://discord.gg/wCRchpdNY" target="_blank" rel="noopener noreferrer"><span>Войти в театр</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+        <div class="signature"><span>С уважением,</span><strong>Le Directeur Lex Reinhart <span class="rose" aria-label="роза">🌹</span></strong></div>
+        <div class="letter-end" aria-hidden="true"><span></span>✦<span></span></div>
+      </article>
+      <button class="cover" id="open-card" type="button" aria-label="Открыть приглашение для Karoline" aria-controls="letter" aria-expanded="false">
+        <span class="cover-frame" aria-hidden="true"></span>
+        <span class="cover-corner top-left" aria-hidden="true">✧</span><span class="cover-corner bottom-right" aria-hidden="true">✧</span>
+        <span class="cover-kicker">UNE INVITATION PRIVÉE</span>
+        <span class="cover-title">Вечер начинается<br><em>с приглашения</em></span>
+        <span class="cover-divider" aria-hidden="true"><i></i>✦<i></i></span>
+        <span class="recipient">Для Karoline</span>
+        <span class="seal" aria-hidden="true"><span>LT</span></span>
+        <span class="open-hint">Коснитесь печати, чтобы открыть <span aria-hidden="true">↗</span></span>
+        <span class="cover-footer">LE THÉÂTRE <span>·</span> LOGE PRIVÉE</span>
+      </button>
+    </div>
+    <button class="close-card" id="close-card" type="button" hidden><span aria-hidden="true">↶</span> Сложить открытку</button>
+  </main>
+  <footer class="page-footer"><span class="footer-line"></span><span>Le rideau se lève pour vous</span><span class="footer-line"></span></footer>
+</body>
+</html>
