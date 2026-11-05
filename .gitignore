@@ -3,3 +3,4 @@ node_modules/
 .openai/*.local.json
 .openai/
 *.log
+.vite/
